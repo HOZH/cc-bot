@@ -1,0 +1,79 @@
+VoiceState {
+    guild: <ref *1> Guild {
+      members: GuildMemberManager {
+        cacheType: [class Collection extends Collection],
+        cache: [Collection [Map]],
+        guild: [Circular *1]
+      },
+      channels: GuildChannelManager {
+        cacheType: [class Collection extends Collection],
+        cache: [Collection [Map]],
+        guild: [Circular *1]
+      },
+      roles: RoleManager {
+        cacheType: [class Collection extends Collection],
+        cache: [Collection [Map]],
+        guild: [Circular *1]
+      },
+      presences: PresenceManager {
+        cacheType: [class Collection extends Collection],
+        cache: Collection(0) [Map] {}
+      },
+      voiceStates: VoiceStateManager {
+        cacheType: [class Collection extends Collection],
+        cache: [Collection [Map]],
+        guild: [Circular *1]
+      },
+      deleted: false,
+      available: true,
+      id: '371908973038665728',
+      shardID: 0,
+      name: 'FILTHY CASUAL',
+      icon: '7ee01d5d3b416a2a47203e80ca7f547b',
+      splash: null,
+      discoverySplash: null,
+      region: 'us-east',
+      memberCount: 43,
+      large: false,
+      features: [],
+      applicationID: null,
+      afkTimeout: 300,
+      afkChannelID: null,
+      systemChannelID: '371908973579993109',
+      embedEnabled: undefined,
+      premiumTier: 0,
+      premiumSubscriptionCount: 0,
+      verificationLevel: 'NONE',
+      explicitContentFilter: 'DISABLED',
+      mfaLevel: 0,
+      joinedTimestamp: 1618361296065,
+      defaultMessageNotifications: 'ALL',
+      systemChannelFlags: SystemChannelFlags { bitfield: 0 },
+      maximumMembers: 100000,
+      maximumPresences: null,
+      approximateMemberCount: null,
+      approximatePresenceCount: null,
+      vanityURLCode: null,
+      vanityURLUses: null,
+      description: null,
+      banner: null,
+      rulesChannelID: null,
+      publicUpdatesChannelID: null,
+      preferredLocale: 'en-US',
+      ownerID: '371908216084365313',
+      emojis: GuildEmojiManager {
+        cacheType: [class Collection extends Collection],
+        cache: Collection(0) [Map] {},
+        guild: [Circular *1]
+      }
+    },
+    id: '216927722734223361',
+    serverDeaf: false,
+    serverMute: false,
+    selfDeaf: false,
+    selfMute: false,
+    selfVideo: false,
+    sessionID: 'd6683a7650a2358f9872884e2ede7ab2',
+    streaming: false,
+    channelID: '831682317000638494'
+  }
