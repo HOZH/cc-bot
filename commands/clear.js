@@ -9,8 +9,8 @@ module.exports = {
         msg.reply("please enter a number for...");
       }
   
-      if (args[0] > 10) {
-        msg.reply("you can't delete more than 10 msgs");
+      if (args[0] > 100) {
+        msg.reply("you can't delete more than 0 msgs");
       }
       if (args[0] < 1) {
         msg.reply("you must delete at least one message");

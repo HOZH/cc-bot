@@ -1,0 +1,576 @@
+first bot is online...
+<ref *1> Client {
+  _events: [Object: null prototype] {
+    guildMemberAdd: [Function (anonymous)],
+    voiceStateUpdate: [Function (anonymous)],
+    message: [Function (anonymous)]
+  },
+  _eventsCount: 3,
+  _maxListeners: undefined,
+  _timeouts: Set(1) {
+    Timeout {
+      _idleTimeout: 60000,
+      _idlePrev: [TimersList],
+      _idleNext: [Timeout],
+      _idleStart: 401,
+      _onTimeout: [Function (anonymous)],
+      _timerArgs: undefined,
+      _repeat: null,
+      _destroyed: false,
+      [Symbol(refed)]: true,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 48,
+      [Symbol(triggerId)]: 36
+    }
+  },
+  _intervals: Set(2) {
+    Timeout {
+      _idleTimeout: 60000,
+      _idlePrev: [Timeout],
+      _idleNext: [TimersList],
+      _idleStart: 236,
+      _onTimeout: [Function (anonymous)],
+      _timerArgs: undefined,
+      _repeat: 60000,
+      _destroyed: false,
+      [Symbol(refed)]: true,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 2,
+      [Symbol(triggerId)]: 1
+    },
+    Timeout {
+      _idleTimeout: 41250,
+      _idlePrev: [TimersList],
+      _idleNext: [TimersList],
+      _idleStart: 401,
+      _onTimeout: [Function (anonymous)],
+      _timerArgs: undefined,
+      _repeat: 41250,
+      _destroyed: false,
+      [Symbol(refed)]: true,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 47,
+      [Symbol(triggerId)]: 36
+    }
+  },
+  _immediates: Set(0) {},
+  options: {
+    _tokenType: 'Bot',
+    partials: [ 'MESSAGE', 'CHANNEL', 'REACTION' ],
+    shardCount: 1,
+    messageCacheMaxSize: 200,
+    messageCacheLifetime: 0,
+    messageSweepInterval: 0,
+    messageEditHistoryMaxSize: -1,
+    fetchAllMembers: false,
+    disableMentions: 'none',
+    restWsBridgeTimeout: 5000,
+    restRequestTimeout: 15000,
+    retryLimit: 1,
+    restTimeOffset: 500,
+    restSweepInterval: 60,
+    presence: {},
+    ws: {
+      large_threshold: 50,
+      compress: false,
+      properties: [Object],
+      version: 6,
+      presence: [Object]
+    },
+    http: {
+      version: 7,
+      api: 'https://discord.com/api',
+      cdn: 'https://cdn.discordapp.com',
+      invite: 'https://discord.gg',
+      template: 'https://discord.new'
+    },
+    shards: [ 0 ]
+  },
+  rest: RESTManager {
+    client: [Circular *1],
+    handlers: Collection(1) [Map] { '/gateway/bot' => [RequestHandler] },
+    tokenPrefix: 'Bot',
+    versioned: true,
+    globalTimeout: null
+  },
+  ws: WebSocketManager {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    gateway: 'wss://gateway.discord.gg/',
+    totalShards: 1,
+    shards: Collection(1) [Map] { 0 => [WebSocketShard] },
+    status: 0,
+    destroyed: false,
+    reconnecting: false,
+    sessionStartLimit: {
+      total: 1000,
+      remaining: 946,
+      reset_after: 80511828,
+      max_concurrency: 1
+    },
+    [Symbol(kCapture)]: false
+  },
+  actions: ActionsManager {
+    client: [Circular *1],
+    MessageCreate: MessageCreateAction { client: [Circular *1] },
+    MessageDelete: MessageDeleteAction { client: [Circular *1] },
+    MessageDeleteBulk: MessageDeleteBulkAction { client: [Circular *1] },
+    MessageUpdate: MessageUpdateAction { client: [Circular *1] },
+    MessageReactionAdd: MessageReactionAdd { client: [Circular *1] },
+    MessageReactionRemove: MessageReactionRemove { client: [Circular *1] },
+    MessageReactionRemoveAll: MessageReactionRemoveAll { client: [Circular *1] },
+    MessageReactionRemoveEmoji: MessageReactionRemoveEmoji { client: [Circular *1] },
+    ChannelCreate: ChannelCreateAction { client: [Circular *1] },
+    ChannelDelete: ChannelDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    ChannelUpdate: ChannelUpdateAction { client: [Circular *1] },
+    GuildDelete: GuildDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    GuildUpdate: GuildUpdateAction { client: [Circular *1] },
+    InviteCreate: InviteCreateAction { client: [Circular *1] },
+    InviteDelete: InviteDeleteAction { client: [Circular *1] },
+    GuildMemberRemove: GuildMemberRemoveAction { client: [Circular *1] },
+    GuildMemberUpdate: GuildMemberUpdateAction { client: [Circular *1] },
+    GuildBanRemove: GuildBanRemove { client: [Circular *1] },
+    GuildRoleCreate: GuildRoleCreate { client: [Circular *1] },
+    GuildRoleDelete: GuildRoleDeleteAction { client: [Circular *1] },
+    GuildRoleUpdate: GuildRoleUpdateAction { client: [Circular *1] },
+    PresenceUpdate: PresenceUpdateAction { client: [Circular *1] },
+    UserUpdate: UserUpdateAction { client: [Circular *1] },
+    VoiceStateUpdate: VoiceStateUpdate { client: [Circular *1] },
+    GuildEmojiCreate: GuildEmojiCreateAction { client: [Circular *1] },
+    GuildEmojiDelete: GuildEmojiDeleteAction { client: [Circular *1] },
+    GuildEmojiUpdate: GuildEmojiUpdateAction { client: [Circular *1] },
+    GuildEmojisUpdate: GuildEmojisUpdateAction { client: [Circular *1] },
+    GuildRolesPositionUpdate: GuildRolesPositionUpdate { client: [Circular *1] },
+    GuildChannelsPositionUpdate: GuildChannelsPositionUpdate { client: [Circular *1] },
+    GuildIntegrationsUpdate: GuildIntegrationsUpdate { client: [Circular *1] },
+    WebhooksUpdate: WebhooksUpdate { client: [Circular *1] },
+    TypingStart: TypingStart { client: [Circular *1] }
+  },
+  voice: ClientVoiceManager {
+    connections: Collection(0) [Map] {},
+    broadcasts: []
+  },
+  shard: null,
+  users: UserManager {
+    cacheType: [class Collection extends Collection],
+    cache: Collection(2) [Map] {
+      '831685614369636364' => [ClientUser],
+      '216927722734223361' => [User]
+    }
+  },
+  guilds: GuildManager {
+    cacheType: [class Collection extends Collection],
+    cache: Collection(2) [Map] {
+      '371908973038665728' => [Guild],
+      '718571890024906753' => [Guild]
+    }
+  },
+  channels: ChannelManager {
+    cacheType: [class Collection extends Collection],
+    cache: Collection(27) [Map] {
+      '371908973579993108' => [CategoryChannel],
+      '371908973579993109' => [TextChannel],
+      '371908973579993110' => [CategoryChannel],
+      '371909283031547915' => [VoiceChannel],
+      '376643208240824320' => [VoiceChannel],
+      '387562586855571466' => [VoiceChannel],
+      '387562801754931202' => [VoiceChannel],
+      '391850157207060491' => [VoiceChannel],
+      '396622141933617152' => [VoiceChannel],
+      '408141792664354816' => [VoiceChannel],
+      '663947003830730782' => [VoiceChannel],
+      '689568573202366631' => [VoiceChannel],
+      '796048754196480041' => [TextChannel],
+      '801324793856131092' => [VoiceChannel],
+      '805343486399873094' => [TextChannel],
+      '825147721714630727' => [TextChannel],
+      '831682317000638494' => [VoiceChannel],
+      '831686276369219664' => [TextChannel],
+      '718571890024906754' => [CategoryChannel],
+      '718571890024906755' => [CategoryChannel],
+      '718571890448531527' => [TextChannel],
+      '718571890448531528' => [VoiceChannel],
+      '718572983991664681' => [VoiceChannel],
+      '718573013884207114' => [VoiceChannel],
+      '718573066460069970' => [VoiceChannel],
+      '718573375093473368' => [VoiceChannel],
+      '783114462197972999' => [VoiceChannel]
+    }
+  },
+  presence: ClientPresence {
+    userID: null,
+    guild: null,
+    status: 'online',
+    activities: [],
+    clientStatus: null
+  },
+  user: ClientUser {
+    id: '831685614369636364',
+    system: null,
+    locale: null,
+    flags: null,
+    username: 'Jj-bot',
+    bot: true,
+    discriminator: '6698',
+    avatar: '5fb1a9eaae38b209740b707706c825ed',
+    lastMessageID: null,
+    lastMessageChannelID: null,
+    verified: true,
+    mfaEnabled: false,
+    _typing: Map(0) {}
+  },
+  readyAt: 2021-04-14T02:05:56.690Z,
+  commands: Collection(6) [Map] {
+    'clear' => {
+      name: 'clear',
+      description: 'clear message command',
+      execute: [AsyncFunction: execute]
+    },
+    undefined => {},
+    'leave' => {
+      name: 'leave',
+      description: '-',
+      execute: [AsyncFunction: execute]
+    },
+    'mute' => {
+      name: 'mute',
+      description: 'mute cmd',
+      execute: [Function: execute]
+    },
+    'ping' => {
+      name: 'ping',
+      description: 'this is a ping command',
+      execute: [Function: execute]
+    },
+    'play' => {
+      name: 'play',
+      description: '-',
+      execute: [AsyncFunction: execute]
+    }
+  },
+  [Symbol(kCapture)]: false
+} 216927722734223361 408141792664354816
+216927722734223361
+<ref *1> Client {
+  _events: [Object: null prototype] {
+    guildMemberAdd: [Function (anonymous)],
+    voiceStateUpdate: [Function (anonymous)],
+    message: [Function (anonymous)]
+  },
+  _eventsCount: 3,
+  _maxListeners: undefined,
+  _timeouts: Set(1) {
+    Timeout {
+      _idleTimeout: 60000,
+      _idlePrev: [TimersList],
+      _idleNext: [Timeout],
+      _idleStart: 401,
+      _onTimeout: [Function (anonymous)],
+      _timerArgs: undefined,
+      _repeat: null,
+      _destroyed: false,
+      [Symbol(refed)]: true,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 48,
+      [Symbol(triggerId)]: 36
+    }
+  },
+  _intervals: Set(2) {
+    Timeout {
+      _idleTimeout: 60000,
+      _idlePrev: [Timeout],
+      _idleNext: [TimersList],
+      _idleStart: 236,
+      _onTimeout: [Function (anonymous)],
+      _timerArgs: undefined,
+      _repeat: 60000,
+      _destroyed: false,
+      [Symbol(refed)]: true,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 2,
+      [Symbol(triggerId)]: 1
+    },
+    Timeout {
+      _idleTimeout: 41250,
+      _idlePrev: [TimersList],
+      _idleNext: [TimersList],
+      _idleStart: 401,
+      _onTimeout: [Function (anonymous)],
+      _timerArgs: undefined,
+      _repeat: 41250,
+      _destroyed: false,
+      [Symbol(refed)]: true,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 47,
+      [Symbol(triggerId)]: 36
+    }
+  },
+  _immediates: Set(0) {},
+  options: {
+    _tokenType: 'Bot',
+    partials: [ 'MESSAGE', 'CHANNEL', 'REACTION' ],
+    shardCount: 1,
+    messageCacheMaxSize: 200,
+    messageCacheLifetime: 0,
+    messageSweepInterval: 0,
+    messageEditHistoryMaxSize: -1,
+    fetchAllMembers: false,
+    disableMentions: 'none',
+    restWsBridgeTimeout: 5000,
+    restRequestTimeout: 15000,
+    retryLimit: 1,
+    restTimeOffset: 500,
+    restSweepInterval: 60,
+    presence: {},
+    ws: {
+      large_threshold: 50,
+      compress: false,
+      properties: [Object],
+      version: 6,
+      presence: [Object]
+    },
+    http: {
+      version: 7,
+      api: 'https://discord.com/api',
+      cdn: 'https://cdn.discordapp.com',
+      invite: 'https://discord.gg',
+      template: 'https://discord.new'
+    },
+    shards: [ 0 ]
+  },
+  rest: RESTManager {
+    client: [Circular *1],
+    handlers: Collection(1) [Map] { '/gateway/bot' => [RequestHandler] },
+    tokenPrefix: 'Bot',
+    versioned: true,
+    globalTimeout: null
+  },
+  ws: WebSocketManager {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    gateway: 'wss://gateway.discord.gg/',
+    totalShards: 1,
+    shards: Collection(1) [Map] { 0 => [WebSocketShard] },
+    status: 0,
+    destroyed: false,
+    reconnecting: false,
+    sessionStartLimit: {
+      total: 1000,
+      remaining: 946,
+      reset_after: 80511828,
+      max_concurrency: 1
+    },
+    [Symbol(kCapture)]: false
+  },
+  actions: ActionsManager {
+    client: [Circular *1],
+    MessageCreate: MessageCreateAction { client: [Circular *1] },
+    MessageDelete: MessageDeleteAction { client: [Circular *1] },
+    MessageDeleteBulk: MessageDeleteBulkAction { client: [Circular *1] },
+    MessageUpdate: MessageUpdateAction { client: [Circular *1] },
+    MessageReactionAdd: MessageReactionAdd { client: [Circular *1] },
+    MessageReactionRemove: MessageReactionRemove { client: [Circular *1] },
+    MessageReactionRemoveAll: MessageReactionRemoveAll { client: [Circular *1] },
+    MessageReactionRemoveEmoji: MessageReactionRemoveEmoji { client: [Circular *1] },
+    ChannelCreate: ChannelCreateAction { client: [Circular *1] },
+    ChannelDelete: ChannelDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    ChannelUpdate: ChannelUpdateAction { client: [Circular *1] },
+    GuildDelete: GuildDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    GuildUpdate: GuildUpdateAction { client: [Circular *1] },
+    InviteCreate: InviteCreateAction { client: [Circular *1] },
+    InviteDelete: InviteDeleteAction { client: [Circular *1] },
+    GuildMemberRemove: GuildMemberRemoveAction { client: [Circular *1] },
+    GuildMemberUpdate: GuildMemberUpdateAction { client: [Circular *1] },
+    GuildBanRemove: GuildBanRemove { client: [Circular *1] },
+    GuildRoleCreate: GuildRoleCreate { client: [Circular *1] },
+    GuildRoleDelete: GuildRoleDeleteAction { client: [Circular *1] },
+    GuildRoleUpdate: GuildRoleUpdateAction { client: [Circular *1] },
+    PresenceUpdate: PresenceUpdateAction { client: [Circular *1] },
+    UserUpdate: UserUpdateAction { client: [Circular *1] },
+    VoiceStateUpdate: VoiceStateUpdate { client: [Circular *1] },
+    GuildEmojiCreate: GuildEmojiCreateAction { client: [Circular *1] },
+    GuildEmojiDelete: GuildEmojiDeleteAction { client: [Circular *1] },
+    GuildEmojiUpdate: GuildEmojiUpdateAction { client: [Circular *1] },
+    GuildEmojisUpdate: GuildEmojisUpdateAction { client: [Circular *1] },
+    GuildRolesPositionUpdate: GuildRolesPositionUpdate { client: [Circular *1] },
+    GuildChannelsPositionUpdate: GuildChannelsPositionUpdate { client: [Circular *1] },
+    GuildIntegrationsUpdate: GuildIntegrationsUpdate { client: [Circular *1] },
+    WebhooksUpdate: WebhooksUpdate { client: [Circular *1] },
+    TypingStart: TypingStart { client: [Circular *1] }
+  },
+  voice: ClientVoiceManager {
+    connections: Collection(0) [Map] {},
+    broadcasts: []
+  },
+  shard: null,
+  users: UserManager {
+    cacheType: [class Collection extends Collection],
+    cache: Collection(2) [Map] {
+      '831685614369636364' => [ClientUser],
+      '216927722734223361' => [User]
+    }
+  },
+  guilds: GuildManager {
+    cacheType: [class Collection extends Collection],
+    cache: Collection(2) [Map] {
+      '371908973038665728' => [Guild],
+      '718571890024906753' => [Guild]
+    }
+  },
+  channels: ChannelManager {
+    cacheType: [class Collection extends Collection],
+    cache: Collection(27) [Map] {
+      '371908973579993108' => [CategoryChannel],
+      '371908973579993109' => [TextChannel],
+      '371908973579993110' => [CategoryChannel],
+      '371909283031547915' => [VoiceChannel],
+      '376643208240824320' => [VoiceChannel],
+      '387562586855571466' => [VoiceChannel],
+      '387562801754931202' => [VoiceChannel],
+      '391850157207060491' => [VoiceChannel],
+      '396622141933617152' => [VoiceChannel],
+      '408141792664354816' => [VoiceChannel],
+      '663947003830730782' => [VoiceChannel],
+      '689568573202366631' => [VoiceChannel],
+      '796048754196480041' => [TextChannel],
+      '801324793856131092' => [VoiceChannel],
+      '805343486399873094' => [TextChannel],
+      '825147721714630727' => [TextChannel],
+      '831682317000638494' => [VoiceChannel],
+      '831686276369219664' => [TextChannel],
+      '718571890024906754' => [CategoryChannel],
+      '718571890024906755' => [CategoryChannel],
+      '718571890448531527' => [TextChannel],
+      '718571890448531528' => [VoiceChannel],
+      '718572983991664681' => [VoiceChannel],
+      '718573013884207114' => [VoiceChannel],
+      '718573066460069970' => [VoiceChannel],
+      '718573375093473368' => [VoiceChannel],
+      '783114462197972999' => [VoiceChannel]
+    }
+  },
+  presence: ClientPresence {
+    userID: null,
+    guild: null,
+    status: 'online',
+    activities: [],
+    clientStatus: null
+  },
+  user: ClientUser {
+    id: '831685614369636364',
+    system: null,
+    locale: null,
+    flags: null,
+    username: 'Jj-bot',
+    bot: true,
+    discriminator: '6698',
+    avatar: '5fb1a9eaae38b209740b707706c825ed',
+    lastMessageID: null,
+    lastMessageChannelID: null,
+    verified: true,
+    mfaEnabled: false,
+    _typing: Map(0) {}
+  },
+  readyAt: 2021-04-14T02:05:56.690Z,
+  commands: Collection(6) [Map] {
+    'clear' => {
+      name: 'clear',
+      description: 'clear message command',
+      execute: [AsyncFunction: execute]
+    },
+    undefined => {},
+    'leave' => {
+      name: 'leave',
+      description: '-',
+      execute: [AsyncFunction: execute]
+    },
+    'mute' => {
+      name: 'mute',
+      description: 'mute cmd',
+      execute: [Function: execute]
+    },
+    'ping' => {
+      name: 'ping',
+      description: 'this is a ping command',
+      execute: [Function: execute]
+    },
+    'play' => {
+      name: 'play',
+      description: '-',
+      execute: [AsyncFunction: execute]
+    }
+  },
+  [Symbol(kCapture)]: false
+} 216927722734223361 376643208240824320
+216927722734223361
+first bot is online...
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node main.js`[39m
+events.js:292
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:202:14
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:539:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node main.js`[39m
+events.js:292
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:202:14
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:539:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node main.js`[39m
+events.js:292
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:202:14
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:539:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+[33m[nodemon] 2.0.7[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node main.js`[39m
+events.js:292
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:202:14
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:539:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}

@@ -19,7 +19,7 @@ for (const file of commandFiles) {
 }
 
 client.once("ready", () => {
-  console.log("first bot is online...");
+  console.log("cc is online...");
 });
 
 client.on("guildMemberAdd", (guildMember) => {
@@ -99,15 +99,23 @@ client.on("message", (msg) => {
     client.commands.get("cmd").execute(msg, args, Discord);
   } else if (command === "clear") {
     client.commands.get("clear").execute(msg, args);
-  } else if (command === "mute") {
-    client.commands.get("mute").execute(msg, args);
-  } else if (command === "reactionrole") {
-    client.commands.get("reactionrole").execute(msg, args, Discord, client);
-  } else if (command === "play") {
+  }else if (command === "play") {
     client.commands.get("play").execute(msg, args);
   } else if (command === "leave") {
     client.commands.get("leave").execute(msg, args);
   }
+  else if (command === "lolstats") {
+    client.commands.get("lolstats").execute(msg, args,Discord);
+  } 
+  else if (command === "lollivegame") {
+   
+    client.commands.get("lollivegame").execute(msg, args,Discord);
+  }   else if (command === "help") {
+   
+    client.commands.get("help").execute(msg,Discord);
+  } 
 });
 
-client.login("ODMxNjg1NjE0MzY5NjM2MzY0.YHY1lg.C4WuuiqwVww7HSnyB28j_4-OAFE");
+client.login("ODMxNjg1NjE0MzY5NjM2MzY0.YHY1lg.0iv97IZ3fF0xcU6RYh4qXbikbcE");
+
+
