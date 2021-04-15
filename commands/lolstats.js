@@ -13,7 +13,7 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
           .setColor("#304281")
           .setTitle(username)
-          .setURL(`https://na.op.gg/summoner/userName=${username}`)
+          .setURL(`https://na.op.gg/summoner/userName=${args.join("%20")}`)
           .setDescription("op.gg stats")
           .addFields(
             {
